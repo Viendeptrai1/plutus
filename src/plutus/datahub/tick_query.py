@@ -232,7 +232,7 @@ class TickDataQuery:
 
             if has_depth:
                 # Order book with depth - use CASE statements
-                select_fields.append('depth')
+                # select_fields.append('depth')
                 for field_info in group['fields']:
                     if field_info['depth'] is not None:
                         select_fields.append(
